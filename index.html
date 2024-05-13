@@ -3,76 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space X</title>
+    <title>SpaceX</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
-    <main>
-        <header> 
-            <div class="headerTittle">
-                <h1 class="tittle"></h1>
-            </div>
-        </header>
-        <div class="leftSection">
-            <div class="checkList">
-                <div class="chekList_item"></div>
-                <div class="chekList_item"></div>
-                <div class="chekList_item"></div>
-                <div class="chekList_item"></div>
-                <div class="chekList_item"></div>
-                <div class="chekList_item"></div>
-                <div class="chekList_item"></div>
-            </div>
+    <header class="header">
+        <div id="header__title" class="header__title">
+            <div class="load"></div>
         </div>
-        <div class="midSection">
-            <div class="statusPanel">
-                <div class="statusPanel_item"></div>
-                <div class="statusPanel_item"></div>
-                <div class="statusPanel_item"></div>
-                <div class="statusPanel_item"></div>
-                <div class="statusPanel_item"></div>
-                <div class="statusPanel_item"></div>
-                <div class="statusPanel_item"></div>
-                <div class="statusPanel_item"></div>
-                <div class="statusPanel_item"></div>
-                <div class="statusPanel_item"></div>
+    </header>
+    <main class="main">
+        <nav class="nav__description">
+            <div id="description__item" class="description__item">
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
             </div>
-            <div class="buttonContainer">
-                <button></button>
-                <button></button>
+            <div class="description__buttom">
             </div>
-        </div>
-        <div class="rightSection">
-            <div class="progressPanel">
-                <div class="progressPanel_item"></div>
-                <div class="progressPanel_item"></div>
-                <div class="progressPanel_item"></div>
-                <div class="progressPanel_item"></div>
-                <div class="progressPanel_item"></div>
-                <div class="progressPanel_item"></div>
+        </nav>
+        <section class="main__section">
+            <article id="section__information__1" class="section__information__1">
+                <div class="load" style="height: 150px;"></div>
+            </article>
+            <article class="section__information__container">
+                <div class="section__information__2">
+                    <div>
+                        <div class="load" style="height: 10px;"></div>
+                    </div>
+                    <div id="information__table__1" class="information__table__1">
+                        <div class="load" style="height: 160px;"></div>
+                    </div>
+                </div>
+                <div id="section__image" class="section__image">
+                    <div class="load" style="height: 350px"></div>
+                </div>
+                <div class="section__information__3">
+                    <div>
+                        <div class="load" style="height: 10px;"></div>
+                    </div>
+                    <div id="information__table__2" class="information__table__2">
+                        <div class="load" style="height: 160px;"></div>
+                    </div>
+                </div>
+            </article>
+            <footer class="footer">
+                <ul>
+                    <li id="rocket">
+                        <a class="select" href="#">
+                            <img src="storage/img/icons/rocket.svg">
+                            <span>Rockets</span>
+                        </a>
+                    </li>
+                    <li id="capsules">
+                        <a href="#">
+                            <img src="storage/img/icons/capsule.svg">
+                            <span>Capsules</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="storage/img/icons/Icon.svg" alt="">
+                            <span>Life</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="storage/img/icons/comms.svg">
+                            <span>Comms</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="storage/img/icons/prop.svg">
+                            <span>Prop</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="storage/img/icons/mech.svg">
+                            <span>Mech</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="storage/img/icons/power.svg" alt="">
+                            <span>Power</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="storage/img/icons/Icon (4).svg" alt="">
+                            <span>Avionics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="storage/img/icons/GNC.svg" alt="">
+                            <span>GNC</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="storage/img/icons/thermal.svg" alt="">
+                            <span>Thermal</span>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+        <nav class="nav__information">
+            <div id="information__2" class="information__item">
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
             </div>
-            <div class="buttonContainer">
-                <p></p>
-                <button></button>
-            </div>
-        </div>
-        <footer>
-            <div>
-                <nav class="mainMenu">
-                    <div class="mainMenu_item"></div>
-                    <div class="mainMenu_item"></div>
-                    <div class="mainMenu_item"></div>
-                    <div class="mainMenu_item"></div>
-                    <div class="mainMenu_item"></div>
-                    <div class="mainMenu_item"></div>
-                    <div class="mainMenu_item"></div>
-                    <div class="mainMenu_item"></div>
-                    <div class="mainMenu_item"></div>
-                </nav>
-            </div>
-        </footer>
+            <div id="paginacion" class="information__buttom"></div>
+        </nav>
     </main>
 </body>
 </html>
+
